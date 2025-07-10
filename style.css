@@ -1,33 +1,33 @@
-/* Soothing muted green gradient background and layout */
+/* Modern purple gradient and clean white text */
 body {
   margin: 0;
   padding: 0;
-  font-family: Arial, sans-serif;
-  background: linear-gradient(135deg, #dbe8d5, #a6c1a5);
+  font-family: 'Inter', sans-serif;
+  background: linear-gradient(135deg, #1a0123, #3e026a);
   min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  color: white;
 }
 
 .container {
   text-align: center;
   padding: 40px;
-}
-h1, h2 {
-  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 1s ease-in-out;
 }
 
 h1 {
   margin: 0;
-  font-size: 2.5em;
-  color: #000;
+  font-size: 2.8em;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
 }
 
 h2 {
   margin-top: 10px;
   font-size: 1.5em;
-  color: #000;
+  font-weight: 400;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.15);
 }
 
 .video-wrapper {
@@ -36,14 +36,16 @@ h2 {
   justify-content: center;
 }
 
-.container {
-  animation: fadeIn 1s ease-in-out;
+.video-wrapper iframe {
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
 }
 
+/* Fade-in animation */
 @keyframes fadeIn {
   from {
     opacity: 0;
-    transform: translateY(15px);
+    transform: translateY(20px);
   }
   to {
     opacity: 1;
